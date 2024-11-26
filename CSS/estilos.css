@@ -1,0 +1,179 @@
+/* CONTENEDOR DE MENU Y NAVEGACION */
+.contenedor_menu{
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+
+}
+
+.contenedor_menu_logo img{
+    height:80px;
+    width:110px;
+}
+
+
+
+nav a{
+    color: white;
+    margin: 40px;
+    font-size: 12px;
+    padding-right: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;   
+}
+
+
+/*Contenedor Imagen */
+.contenedor_carrusel{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contenedor_carrusel img{
+    width:1320px;
+    padding-left: 15px;
+}
+
+
+/* Contenedor section */ 
+.articulo_nosotros_cajas{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.caja_español h3{
+    text-align: center;
+    color: blue;
+}
+
+.caja_español{
+    margin: 10px;
+}
+
+.caja_ingles{
+    margin: 10px;
+}
+
+.caja_ingles h3{
+    text-align: center;
+    color: blue;
+}
+
+/* CONTENEDOR SEGUNDO ARTICULO TRABAJA CON NOSOTROS */
+
+.trabaja_nosotros{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px;
+}
+
+
+.imagen_trabaja img{
+    height: 500px;
+    width: 700px;
+    margin: 10px;
+}
+
+
+.parrafo_trabaja{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.boton_trabaja{
+    background-color: blue;
+    color:#faf100 ;
+    padding: 12px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+/* CONTENEDOR FOOTER */
+
+.footer_padre{
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+    align-items: center;
+}
+
+.imagen_footer img{
+    width: 75%;
+    height: auto;
+}
+
+.footer_contactanos{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer_nosotros li{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    list-style-type: none;
+}
+
+/* VERSION MOVIL */
+
+@media screen and  (max-width:  767px){
+    .btn_menu{
+        display: flex;
+    }
+
+    .menu_item{
+        background-color: rgba(52, 50, 47);
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+        z-index: 99;
+    }
+
+    .menu_item{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+
+    .contenedor_carrusel img{
+        max-width: 437px;
+    }
+
+    .imagen_trabaja img{
+        max-width: 437px;
+    }
+
+    .trabaja_nosotros{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .show{
+        left: 0;
+    }
+
+    .footer_padre{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+}
